@@ -59,3 +59,6 @@ sections below. If two rules seem to disagree, stop and ask me.
 ## Behaviors
 
 <!-- One rule is added here per step of the lab. Newest at the bottom. -->
+
+- Behaviors first: I give the expected answers, you write them as checks, show
+  them failing, then write the code.
