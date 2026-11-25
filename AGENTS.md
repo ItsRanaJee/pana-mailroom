@@ -44,7 +44,7 @@ sections below. If two rules seem to disagree, stop and ask me.
 
 - I am new to Python. I am working through Part III of *The AI Agent Factory*:
   https://agentfactory.panaversity.org/building-ai-workers/programming-fundamentals/
-- **I have completed up to lesson 13.7.** I update this number as I learn.
+- **I have completed up to lesson 13.8.** I update this number as I learn.
   When I say "I have now completed up to X", change only this number.
 - Write code only with what I have learned up to that lesson. If something
   new would really help, stop and tell me its name in one line. I decide.

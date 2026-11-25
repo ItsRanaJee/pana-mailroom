@@ -1,5 +1,5 @@
 [project]
-name = "mailroom"
+name = "pana-mailroom"
 version = "0.1.0"
 description = "Command-line tool for one newsletter: count subscribers, check an issue, send it to a practice mail server."
 readme = "README.md"

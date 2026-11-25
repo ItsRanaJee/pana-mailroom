@@ -18,7 +18,7 @@ most useful lines in this file.
 
 ## Step 1 · Count your subscribers
 
-**Prediction:** total = ___ · group counts = ___
+**Prediction:** total = 25· group counts = 3.
 
 **What happened:**
 
