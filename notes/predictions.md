@@ -47,3 +47,51 @@ most useful lines in this file.
 **What happened:**
 
 ---
+
+## Step 5 · Is this subject line OK?
+
+**Prediction:** *(Drafted by Claude at my request, before any code exists. These are the cases I adopt as mine. I can edit any of them before the tests are written.)*
+
+Rule 1: the subject is 50 characters or fewer. `check_subject(issue_text)` returns a list of problems, empty when the subject is fine.
+
+| # | Subject | Length | Expected |
+| --- | --- | --- | --- |
+| 1 | `The Steep Club opens Monday` | 27 | no problems |
+| 2 | `Your Steep Club box ships on Monday with new teas.` | 50 | no problems (the limit itself is allowed) |
+| 3 | `Your Steep Club box ships on Monday with fresh teas` | 51 | one problem: too long |
+| 4 | *(empty after `Subject:`)* | 0 | one problem: empty |
+| 5 | *(spaces only)* | 0 after trimming | one problem: empty |
+| 6 | *(no `Subject:` line at all)* | none | one problem: missing |
+
+Also: `issues/issue-01.md` gives no problems.
+
+**What happened:**
+
+---
+
+## Step 6 · The rest of the rules
+
+**Prediction:** *(Drafted by Claude at my request, before any code exists, from the real `docs/email-rules.md`. I adopt these cases and can edit them.)*
+
+`mailroom.py check <issue file>` prints every problem on its own line and exits 1, or prints `OK` and exits 0.
+
+| Rule | Case | Expected |
+| --- | --- | --- |
+| 2 Preview | a preview of exactly 90 characters | no problems |
+| 2 Preview | a preview of 91 characters | one problem: too long |
+| 2 Preview | no `Preview:` line | one problem: missing |
+| 3 Greeting | no `{{first_name}}` in the body | one problem |
+| 3 Greeting | `Hi {{first_name}},` present | no problems |
+| 4 One link | two `[text](https://...)` links | one problem: too many links |
+| 4 One link | no link | one problem: no link |
+| 4 One link | a link written `[text](http://...)` | still counts as a link, so no problem for the count |
+| 5 Footer | no `You're getting this because` line | one problem |
+| 5 Footer | no `Unsubscribe: {{unsubscribe_url}}` line | one problem |
+| Two at once | no greeting and no footer lines | the problems are all listed, one per line, exit 1 |
+| Whole issue | `issues/issue-01.md` | `OK`, exit 0 |
+
+Note: `issue-01.md`'s preview is 86 characters, so it passes. `{{unsubscribe_url}}` and `{{company_address}}` are placeholders, not links.
+
+**What happened:**
+
+---
