@@ -23,3 +23,11 @@ most useful lines in this file.
 **What happened:**
 
 ---
+
+## Step 3 · The 30th of February
+
+**Prediction:** Yes, Mailroom will crash, because 2026-02-30 is not a real date (February never has 30 days).
+
+**What happened:**
+
+---
