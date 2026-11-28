@@ -24,6 +24,14 @@ most useful lines in this file.
 
 ---
 
+## Step 2 · Who is new, and when do we send?
+
+**Prediction:** None. I did not write one before the run. *(Recorded afterwards, so this is not a prediction.)*
+
+**What happened:** With run date 2026-11-20, 3 subscribers joined in the last 30 days (Noah, Yuki, Sara). The next send is 2026-12-07, and after 2026-12-07 it is 2027-01-04.
+
+---
+
 ## Step 3 · The 30th of February
 
 **Prediction:** Yes, Mailroom will crash, because 2026-02-30 is not a real date (February never has 30 days).
