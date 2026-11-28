@@ -31,3 +31,11 @@ most useful lines in this file.
 **What happened:**
 
 ---
+
+## Step 4 · Real tests
+
+**Prediction:** 7 tests, one per behavior. *(Written after the run, so it is a record and not a true prediction.)*
+
+**What happened:**
+
+---
